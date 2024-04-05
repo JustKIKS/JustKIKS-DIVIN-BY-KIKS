@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="" class="logo">DIVIN BY kiks$ </a>
+      <img
+        class="logo-divine-white"
+        height="70px"
+        width="70px"
+        src="./img/Logo Divin Ange Blanc.png"
+        alt=""
+      />
+      <img
+        class="logo-divine-white2"
+        height="70px"
+        width="70px"
+        src="./img/Logo Divin Ange Noir.png"
+        alt=""
+      />
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="">About</a>
+        <a href="">Products ▾</a>
+        <a href="">Faq</a>
+        <a class="mail" href="mailto:luka.brouard@gmail.com">Contacts</a>
+        <a href=""
+          ><img
+            class="shop-logo"
+            height="30px"
+            width="30px"
+            src="./img/Panier icone.png"
+            alt=""
+        /></a>
+      </nav>
+    </header>
+    <div class="card-container">
+      <div class="" id="BlackWindbreaker1">
+        <img src="./img/black windbreaker back.jpg" alt="" />
+      </div>
+      <div class="product-card" id="BlackWindbreaker2">
+        <img src="./img/Bounce Black 720x.jpg" alt="" />
+        <h4>Black Windbreaker Jacket</h4>
+        <div>
+          <span>120$</span>
+          <button>+</button>
+        </div>
+      </div>
+      <div class="" id="BlackWindbreaker3">
+        <img src="./img/windbreakerrun.jpg" alt="" />
+      </div>
+    </div>
+    <div class="video-container">
+      <img
+        width="100%"
+        height="50%"
+        class="video-divin"
+        src="./img/GIF_DIVIN.gif"
+        alt=""
+      />
+    </div>
+    <h1 class="divin-title">Divin By Luka Last Drop :</h1>
+    <div class="card-container">
+      <div class="product-card" id="BlackWindbreaker2">
+        <img src="./img/Bounce Black 720x.jpg" alt="" />
+        <h4>Black Windbreaker Jacket</h4>
+        <div>
+          <span>120$</span>
+          <button>+</button>
+        </div>
+      </div>
+      <div class="product-card" id="BlackWindbreaker2">
+        <img src="./img/Windbreak Cream Front.png" alt="" />
+        <h4>Cream Windbreaker Jacket</h4>
+        <div>
+          <span>120$</span>
+          <button>+</button>
+        </div>
+      </div>
+      <div class="product-card" id="BlackWindbreaker2">
+        <img id="ring-img" src="./img/BAGUE DIVIN BY DIVIN.jpg" alt="" />
+        <h4>Divin Miror Ring</h4>
+        <div>
+          <span>39,95$</span>
+          <button>+</button>
+        </div>
+      </div>
+    </div>
+    <h1 class="nextdrop">Next Drop in :</h1>
+    <div id="countdown">
+      <div class="countdown-container">
+        <span class="value">-</span>
+        <span class="label">Days</span>
+      </div>
+      <div class="countdown-container">
+        <span class="value">-</span>
+        <span class="label">Hours</span>
+      </div>
+      <div class="countdown-container">
+        <span class="value">-</span>
+        <span class="label">Minutes</span>
+      </div>
+      <div class="countdown-container">
+        <span class="value">-</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+    <span class="Seeyou">See you soon...</span>
+    <img
+      class="divin-angel"
+      height="70px"
+      width="70px"
+      src="./img/Logo Divin Ange Noir.png"
+      alt=""
+    />
+    <script>
+      let countDownDate = new Date("April 5, 2024 16:00:00").getTime();
+
+      let x = setInterval(function () {
+        let now = new Date().getTime();
+        let distance = countDownDate - now;
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let = seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.querySelector("#countdown").innerHTML = `
+          <div class='countdown-container'>
+            <span class='value'>${days}</span>
+            <span class='label'>Days</span>
+            </div>
+            <div class='countdown-container'>
+            <span class='value'>${hours}</span>
+            <span class='label'>Hours</span>
+            </div>
+            <div class='countdown-container'>
+            <span class='value'>${minutes}</span>
+            <span class='label'>Minutes</span>
+            </div>
+            <div class='countdown-container'>
+            <span class='value'>${seconds}</span>
+            <span class='label'>Seconds</span>
+            </div>
+        `;
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.querySelector("#countdown").innerHTML =
+            "<span>Terminé !</span>";
+        }
+      }, 1000);
+    </script>
+    <footer>
+      <div class="footer-section">
+        <p class="signature">Site créé par Luka Brouard</p>
+        <ul class="footer-list">
+          <li>FAQ</li>
+          <li>
+            <a class="mail" href="mailto:luka.brouard@gmail.com">CONTACT</a>
+          </li>
+          <li>CAREERS</li>
+          <a id="form-link" href="./formulaire.html"><li>ADVICE</li></a>
+        </ul>
+        <p class="footer-copyright">
+          © DIVINBYLUKA 2099 CGV CGU シ MENTIONS LÉGALES POLITIQUE シ DE
+          CONFIDENTIALITÉ シ
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+////
