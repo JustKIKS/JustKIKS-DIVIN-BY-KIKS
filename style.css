@@ -167,7 +167,6 @@ body {
   font-family: Divin-title-fonts;
   font-size: 100px;
   padding-top: 86px;
-  animation: apparition;
 }
 
 #ring-img {
@@ -261,11 +260,4 @@ body {
   margin-top: 34px;
   margin-left: 15px;
   font-size: 13px;
-}
-
-@keyframes apparition {
-  from {
-    opacity: 0;
-    transform: translateY(150px);
-  }
 }
