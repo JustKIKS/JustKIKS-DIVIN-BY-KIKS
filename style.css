@@ -94,6 +94,8 @@ body {
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 100px;
+  transition: 0.5s ease;
+  cursor: pointer;
 }
 
 .product-card img {
@@ -122,6 +124,11 @@ body {
   height: 25px;
   font-size: 1em;
   padding-bottom: 2px;
+}
+
+.product-card:hover {
+  transform: scale(1.2);
+  box-shadow: 0 5px 25px #e1e1e1;
 }
 
 .card-container {
