@@ -127,7 +127,7 @@ body {
 }
 
 .product-card:hover {
-  transform: scale(1);
+  transform: scale(1.2);
   box-shadow: 0 5px 25px #e1e1e1;
 }
 
